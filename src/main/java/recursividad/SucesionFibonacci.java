@@ -7,36 +7,42 @@ package recursividad;
 /**
  *
  * @author noelia
- * 
- * 
- * 
+ *
+ *
+ *
  */
 public class SucesionFibonacci {
 
     public static void main(String[] args) {
-        
-        int serie = 10, num1 = 0, num2 = 1, suma = 1;
- 
-        // Muestro el valor inicial
-        System.out.println(num1);
-         
-        for (int i = 1; i < serie; i++) {
-             
-            // muestro la suma
-            System.out.println(suma);
-             
-            //primero sumamos
-            suma = num1 + num2;
-            //Despues, cambiamos la segunda variable por la primera
-            num1 = num2;
-            //Por ultimo, cambiamos la suma por la segunda variable
-            num2 = suma;
-             
-             
-        }
-        
+
+        System.out.println(fibonacciIterativo(5));
+        System.out.println("--");
+        System.out.println(fibonacciRecursivo(7));
+
     }
-    
-    
-    
+
+    public static int fibonacciIterativo(int n) {
+        int numero = Math.abs(n);
+
+        int resultado = 0;
+        int n1 = 0;
+        int n2 = 1;
+
+        for (int i = 0; i < numero; i++) {
+            resultado = n1 + n2;
+            n2 = n1;
+            n1 = resultado;
+        }
+
+        return resultado;
+    }
+
+    public static int fibonacciRecursivo(int n) { //suponemos n positivo o 0
+        if (n < 2) {
+            return n;
+        } else {
+            return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
+        }
+    }
+
 }
