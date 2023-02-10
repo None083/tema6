@@ -21,6 +21,14 @@ public class Vehiculo {
     private double tarifa;
     private boolean disponible;
 
+    public void arrancar(){
+        System.out.println("El vehículo " + bastidor + " está arrancando");
+    }
+    
+    public void parar(){
+        System.out.println("El vehículo " + bastidor + " está parando");
+    }
+    
    
     @Override
     public String toString() {
