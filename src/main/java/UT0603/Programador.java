@@ -7,9 +7,14 @@ package UT0603;
 /**
  *
  * @author noelia
+ * 
+ * implementar interfaz comparable con el atributo antiguedad d jardinere
+ * pista, no se puede (no sé el que)
+ * sobreescribir?
  */
-public class Programador extends Persona {
+public class Programador extends Empleado {
     
-    private 
+     private Categoria categoria;
+     
     
 }
