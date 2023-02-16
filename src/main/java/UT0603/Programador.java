@@ -15,6 +15,15 @@ package UT0603;
 public class Programador extends Empleado {
     
      private Categoria categoria;
+
+    public Programador(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    public Programador() {
+        
+    }
      
     
+     
 }

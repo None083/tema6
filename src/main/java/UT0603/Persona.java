@@ -8,7 +8,7 @@ package UT0603;
  *
  * @author noelia
  */
-public class Persona {
+public class Persona implements Comparable<Persona>{
     
     private String nombre;
     private String nif;
@@ -50,6 +50,11 @@ public class Persona {
     @Override
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", nif=" + nif + ", edad=" + edad + '}';
+    }
+
+    @Override
+    public int compareTo(Persona o) {
+        return this.nif.compareToIgnoreCase(o.nif);
     }
     
     
