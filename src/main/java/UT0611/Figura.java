@@ -37,7 +37,7 @@ public abstract class Figura {
         this.altura = altura;
     }
     
-    public abstract void calcularArea();
+    public abstract int calcularArea();
 
     @Override
     public String toString() {
