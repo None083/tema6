@@ -14,19 +14,9 @@ public class Rectangulo extends Figura {
         super(base, altura);
     }
 
-    public Rectangulo() {
-    }
-
     @Override
     public int calcularArea() {
         return getBase() * getAltura();
     }
 
-    @Override
-    public String toString() {
-        return "Rectangulo{" + "Base: " + super.getBase() + "Altura: " + super.getAltura() + '}';
-    }
-    
-    
-    
 }

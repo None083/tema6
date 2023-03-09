@@ -23,13 +23,13 @@ import java.util.Objects;
  */
 public class Vuelo implements Comparable<Vuelo>{
     
-    private String codigo;
+    private int codigo;
     private String origen;
     private String destino;
     private int duracion;
     private List<Pasajero> lista = new ArrayList<>();
 
-    public Vuelo(String codigo, String origen, String destino, int duracion) {
+    public Vuelo(int codigo, String origen, String destino, int duracion) {
         this.codigo = codigo;
         this.origen = origen;
         this.destino = destino;
@@ -39,11 +39,11 @@ public class Vuelo implements Comparable<Vuelo>{
     public Vuelo() {
     }
 
-    public String getCodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(String codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 

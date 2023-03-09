@@ -14,17 +14,9 @@ public class Triangulo extends Figura {
         super(base, altura);
     }
 
-    public Triangulo() {
-    }
-
     @Override
     public int calcularArea() {
         return getBase() * getAltura() / 2;
     }
 
-    @Override
-    public String toString() {
-        return "Rectangulo{" + "Base: " + super.getBase() + "Altura: " + super.getAltura() + '}';
-    }
-    
 }

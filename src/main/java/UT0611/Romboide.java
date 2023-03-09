@@ -14,17 +14,9 @@ public class Romboide extends Figura {
         super(base, altura);
     }
 
-    public Romboide() {
-    }
-
     @Override
     public int calcularArea() {
         return getBase() * getAltura();
     }
 
-    @Override
-    public String toString() {
-        return "Rectangulo{" + "Base: " + super.getBase() + "Altura: " + super.getAltura() + '}';
-    }
-    
 }
