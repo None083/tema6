@@ -18,4 +18,22 @@ public abstract class Electrodomestico {
         this.modelo = modelo;
     }
 
+    public double getConsumo() {
+        return consumo;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setConsumo(double consumo) {
+        this.consumo = consumo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+    
+    
+
 }

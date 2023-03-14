@@ -17,10 +17,6 @@ public class Frigorifico extends Electrodomestico implements Silencioso {
         this.capacidadLitros = capacidadLitros;
     }
 
-    public Frigorifico(double consumo, String modelo) {
-        super(consumo, modelo);
-    }
-
     public double getCapacidadLitros() {
         return capacidadLitros;
     }
@@ -36,7 +32,7 @@ public class Frigorifico extends Electrodomestico implements Silencioso {
 
     @Override
     public void silencio() {
-        System.out.println("El modelo " + );
+        System.out.println("El modelo de frigorifico " + super.getModelo() + " emite 50db");
     }
     
     
