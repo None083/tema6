@@ -15,7 +15,7 @@ public class CampanaExtractora extends Electrodomestico {
     public CampanaExtractora(int decibelios, double consumo, String modelo) {
         super(consumo, modelo);
         
-        if (decibelios > 50){
+        if (decibelios < 50){
             this.decibelios = 50;
         } else{
             this.decibelios = decibelios;

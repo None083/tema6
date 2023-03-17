@@ -36,7 +36,6 @@ public class Main {
             }
         }
         
-        
         System.out.println("-----------");
         for (int i = listaRobots.size()-1; i > listaRobots.size()-4; i--) {
             System.out.println(listaRobots.get(i));
@@ -53,6 +52,14 @@ public class Main {
         
         System.out.println(Collections.binarySearch(listaRobots, new Robot(8), criterioNumeroSerie));
         
+        System.out.println("-----Usando API stream------");
+        listaRobots.stream()
+                .filter(r->r.getPorcentajeVida()>=50)
+                .forEach(r->System.out.println(r));
+        
+        listaRobots.stream()
+                .limit(3)
+                .forEach(r->System.out.println(r.getNumeroSerie()));
         
     }
     
