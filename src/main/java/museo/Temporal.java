@@ -15,7 +15,8 @@ public final class Temporal extends Sala {
     private LocalDate fechaIni;
     private LocalDate fechaFin;
 
-    public Temporal(LocalDate fechaIni, LocalDate fechaFin) {
+    public Temporal(LocalDate fechaIni, LocalDate fechaFin, Temperatura sensorTemp, Humedad sensorHum) {
+        super(sensorTemp, sensorHum);
         this.fechaIni = fechaIni;
         this.fechaFin = fechaFin;
     }
@@ -38,7 +39,7 @@ public final class Temporal extends Sala {
 
     @Override
     public String toString() {
-        return "Temporal{" + "fechaIni=" + fechaIni + ", fechaFin=" + fechaFin + '}';
+        return "Temporal{" + "fechaIni=" + fechaIni + ", fechaFin=" + fechaFin + "\n" + super.toString() + '}';
     }
     
     

@@ -14,5 +14,33 @@ public abstract class Obra {
     private String autor;
     
     
+    public Obra(String id, String autor) {
+        this.id = id;
+        this.autor = autor;
+    }
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    @Override
+    public String toString() {
+        return "Obra{" + "id=" + id + ", autor=" + autor + '}';
+    }
+
+    
+    
+    
     
 }

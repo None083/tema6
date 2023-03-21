@@ -37,13 +37,15 @@ public final class Humedad extends Sensor {
 
     @Override
     public String toString() {
-        return "Humedad{" + "maxHum=" + maxHum + ", minHum=" + minHum + '}';
+        return "Humedad{" + "maxHum=" + maxHum + ", minHum=" + minHum + "\n" + super.toString() + '}';
     }
 
 
     @Override
-    public void alarma() {
-        
+    public void alarma(int humedad) {
+        if (humedad < this.minHum || humedad > this.maxHum){
+            System.out.println("Alarma: la humedad no es adecuada");
+        }
     }
     
     

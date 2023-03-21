@@ -37,14 +37,14 @@ public final class Temperatura extends Sensor {
 
     @Override
     public String toString() {
-        return "Temperatura{" + "maxTemp=" + maxTemp + ", minTemp=" + minTemp + '}';
+        return "Temperatura{" + "maxTemp=" + maxTemp + ", minTemp=" + minTemp + "\n" + super.toString() + '}';
     }
-    
-    
 
     @Override
-    public void alarma() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void alarma(int temperatura) {
+        if (temperatura < this.minTemp || temperatura > this.maxTemp){
+            System.out.println("Alarma: la temperatura no es adecuada");
+        }
     }
 
 }

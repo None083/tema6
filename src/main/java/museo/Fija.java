@@ -12,7 +12,8 @@ public final class Fija extends Sala {
     
     private Boolean estado;
 
-    public Fija(Boolean estado) {
+    public Fija(Boolean estado, Temperatura sensorTemp, Humedad sensorHum) {
+        super(sensorTemp, sensorHum);
         this.estado = estado;
     }
 
@@ -26,7 +27,7 @@ public final class Fija extends Sala {
 
     @Override
     public String toString() {
-        return "Fija{" + "estado=" + estado + '}';
+        return "Fija{" + "estado=" + estado + "\n" + super.toString() + '}';
     }
     
     

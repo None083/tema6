@@ -29,6 +29,6 @@ public abstract class Sensor {
         return "Sensor{" + "id=" + id + '}';
     }
     
-    public abstract void alarma();
+    public abstract void alarma(int valor);
     
 }
