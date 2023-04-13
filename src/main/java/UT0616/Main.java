@@ -10,37 +10,37 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
 /**
  *
  * @author FX506
+ * 
+ * hay que sacar los numeros con una expresion regular
  */
 public class Main {
 
     public static void main(String[] args) {
 
-//        List<Robot> listaRobots = new ArrayList();
-//        for (int i = 0; i < 20; i++) {
-//            listaRobots.add(new Robot(i));
-//        }
-//
-//        for (Robot l : listaRobots) {
-//            System.out.println(l);
-//        }
-//
+        List<Robot> listaRobots = new ArrayList();
+        for (int i = 0; i < 20; i++) {
+            listaRobots.add(new Robot(i));
+        }
+
+        for (Robot l : listaRobots) {
+            System.out.println(l);
+        }
+
         String idFichero = "robot.txt";
-//        try ( BufferedWriter flujo = new BufferedWriter(new FileWriter(idFichero))) {
-//            for (Robot l : listaRobots) {
-//                flujo.write(l.getNumeroSerie() + " " + l.getPorcentajeVida());
-//                flujo.newLine();
-//            }
-//        } catch (IOException e) {
-//            System.out.println(e.getMessage());
-//        }
+        try ( BufferedWriter flujo = new BufferedWriter(new FileWriter(idFichero))) {
+            for (Robot l : listaRobots) {
+                flujo.write(l.getNumeroSerie() + " " + l.getPorcentajeVida()); //l.toString
+                flujo.newLine();
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
 
         List<Robot> lista2 = new ArrayList<>();
         
